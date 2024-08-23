@@ -1,4 +1,4 @@
-@charset "UTF-8";
+ @charset "UTF-8";
 /*!
  * Bootswatch v5.3.3 (https://bootswatch.com)
  * Theme: lux
@@ -3757,9 +3757,18 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  position:fixed;
-  align-items: start;
-  padding: 0px;
+}
+
+.navbar-vertical{
+  position:fixed !important;
+  align-items: start !important;
+  padding: 0px !important;
+  z-index:1100;
+}
+@media (min-width: 1200px) {
+    .navbar-vertical.navbar-expand-xl.navbar-card .navbar-vertical-content, .navbar-vertical.navbar-expand-xl.navbar-vibrant .navbar-vertical-content, .navbar-vertical.navbar-expand-xl.navbar-inverted .navbar-vertical-content {
+        padding: .5rem .625rem 0 0.5rem !important;
+    }
 }
 
 .nav-link {
