@@ -3746,7 +3746,7 @@ textarea.form-control-lg {
   margin-top: calc(0 * -1);
 }
 .nav {
-  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-x: 0rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-link-color);
@@ -3757,6 +3757,9 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  position:fixed;
+  align-items: start;
+  padding: 0px;
 }
 
 .nav-link {
@@ -3961,6 +3964,7 @@ textarea.form-control-lg {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  width:100%;
 }
 
 .navbar-toggler {
@@ -4014,8 +4018,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: var(--bs-navbar-nav-link-padding-x);
-    padding-left: var(--bs-navbar-nav-link-padding-x);
+    /* padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x); */
   }
   .navbar-expand-sm .navbar-nav-scroll {
     overflow: visible;
