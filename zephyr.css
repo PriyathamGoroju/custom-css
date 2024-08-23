@@ -4062,11 +4062,22 @@ textarea.form-control-lg {
 .navbar-text a:focus {
   color: var(--bs-navbar-active-color);
 }
-
+.navbar-vertical{
+  position:fixed !important;
+  align-items: start !important;
+  padding: 0px !important;
+  z-index:1100;
+}
+@media (min-width: 1200px) {
+    .navbar-vertical.navbar-expand-xl.navbar-card .navbar-vertical-content, .navbar-vertical.navbar-expand-xl.navbar-vibrant .navbar-vertical-content, .navbar-vertical.navbar-expand-xl.navbar-inverted .navbar-vertical-content {
+        padding: .5rem .625rem 0 0.5rem !important;
+    }
+}
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
+  width:100%;
 }
 
 .navbar-toggler {
@@ -4121,8 +4132,8 @@ textarea.form-control-lg {
     position: absolute;
   }
   .navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: var(--bs-navbar-nav-link-padding-x);
-    padding-left: var(--bs-navbar-nav-link-padding-x);
+    /* padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x); */
   }
   .navbar-expand-sm .navbar-nav-scroll {
     overflow: visible;
