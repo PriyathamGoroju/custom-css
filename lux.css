@@ -3758,12 +3758,16 @@ textarea.form-control-lg {
   margin-bottom: 0;
   list-style: none;
 }
+.navbar-top{
+  position:sticky !important;
+  background-color: #fff;
+}
 
 .navbar-vertical{
   position:fixed !important;
   align-items: start !important;
   padding: 0px !important;
-  z-index:1100;
+  z-index:1019;
 }
 @media (min-width: 1200px) {
     .navbar-vertical.navbar-expand-xl.navbar-card .navbar-vertical-content, .navbar-vertical.navbar-expand-xl.navbar-vibrant .navbar-vertical-content, .navbar-vertical.navbar-expand-xl.navbar-inverted .navbar-vertical-content {
